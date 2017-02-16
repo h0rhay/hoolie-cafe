@@ -2062,9 +2062,15 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* @import './_debug'; */
 /*====== CUSTOM STYLES =======*/
 .bg-lime-gradient { background: rgba( 1, 255, 111, 1 ); background: -webkit-linear-gradient( top, rgba( 1, 255, 111, 1 ) 0%, rgba( 2, 163, 72, 1 ) 100% ); background: linear-gradient( to bottom, rgba( 1, 255, 111, 1 ) 0%, rgba( 2, 163, 72, 1 ) 100% ); }
-.bg-orange-gradient { background: rgba( 255, 133, 27, 1 ); background: -webkit-linear-gradient( top, rgba( 255, 133, 27, 1 ) 0%, rgba( 255, 80, 27, 1 ) 100% ); background: linear-gradient( to bottom, rgba( 255, 133, 27, 1 ) 0%, rgba( 255, 80, 27, 1 ) 100% ); }
+/*.bg-orange-gradient {
+  background: rgba(255,133,27,1);
+  background: -webkit-linear-gradient(top, rgba(255,133,27,1) 0%, rgba(255,80,27,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,133,27,1) 0%, rgba(255,80,27,1) 100%);
+}*/
+.bg-orange-gradient { background: rgba( 255, 133, 27, 1 ); background: -webkit-linear-gradient( to top, #f83600 0%, #f9d423 100% ); background: -webkit-linear-gradient( bottom, #f83600 0%, #f9d423 100% ); background: linear-gradient( to top, #f83600 0%, #f9d423 100% ); }
 .montserrat { font-family: 'Montserrat', sans-serif; }
 .merriweather { font-family: 'Merriweather', serif; }
+.custom-lh { line-height: 1.2; }
 @media screen and (min-width: 30em) {
  .aspect-ratio-ns { height: 0; position: relative; }
  .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
@@ -3294,5 +3300,9 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-mid-l { vertical-align: middle; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
+}
+@media (max-width:768px) {
+ .main-logo { max-width: 50%; }
+ .mobile-heading { font-size: 2rem; text-align: center; }
 }
 
